@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">MyStore</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li> <a href="signup.html" class="signup-btn">Sign Up</a></li>
+    </ul>
+    <button class="cart-btn" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </nav>
+
+  <header>
+  <h1>My Shop</h1>
+  <nav>
+   
+      <!-- Signup link -->
+    <div class="cart">
+      🛒 Cart <span id="cart-count">0</span>
+    </div>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to MyStore</h1>
+      <p>Your one-stop shop for amazing products.</p>
+      <a href="#products" class="shop-btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <button onclick="closeCart()" class="close-btn">Close</button>
+</div>
+
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2 class="section-title">Our Products</h2>
+    <div id="product-list"></div>
+  </section>
+
+  <!--  About Us Section -->
+  <section id="about" class="info-section">
+    <h2>About Us</h2>
+    <p>Welcome to OneStore! We provide high-quality products at affordable prices. Our goal is to give you the best shopping experience online.</p>
+  </section>
+
+  <!--  Contact Us Section -->
+  <section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <p>Email: support@Onestore.com</p>
+    <p>Phone: +1 234 567 890</p>
+  </section>
+
+  <footer>
+    <p>© 2025 OneStore. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
